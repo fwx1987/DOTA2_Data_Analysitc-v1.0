@@ -22,7 +22,12 @@ def pull_player_matches(account_id):
 
 def gen_player_win_history(account_id):
     matches_data = pull_player_matches(account_id)
-
+    x=0
+    for  data in matches_data:
+        print(data)
+        x =x+1
+        if x>=100:
+            break
     return len(matches_data)
 
 #
